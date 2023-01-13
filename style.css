@@ -1,4 +1,6 @@
-
+.fix-nav{
+    position: fixed;
+}
 #searchbox{
     background-color: white;
     border: 1px solid;
@@ -59,6 +61,8 @@ hr{
 
 #firstnavbar{
     /* background-color: #212121; */
+    /* position: fixed; */
+    /* top: 60px; */
     text-decoration: none;
     color: #fff;
     height: 40px;
@@ -68,6 +72,7 @@ hr{
 }
 
 .menu-bars{
+
     text-decoration: none;
     margin-left: 2rem;
     font-size: 2rem;
@@ -75,6 +80,8 @@ hr{
 }
 
 #nav-menu{
+    /* position: fixed;
+    top: 60px; */
     background-color: #fff;
     width: 250px;
     height: 100vh;
@@ -157,4 +164,96 @@ hr{
     justify-content: center;
 }
 
+/* functions keys */
+.filter{
+    position: fixed;
+    left: 250px;
+    top: 70px;
+    width: calc(100%-250px);
+    height: 60px;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
 
+}
+.filter::-webkit-scrollbar{
+    display: none;
+}
+
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+
+
+
+}
+.filter-options.active{
+    color: #fff;
+    background-color: #242424;
+    border: 1px solid #242424;
+    border-radius: 50px;
+}
+
+/* video */
+.video-container{
+    width:calc(100%-250px) ;
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+    /* background-color: #000; */
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+
+}
+.thumbnail{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.content{
+    width: 100%;
+    height: 100px ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.title{
+    width: 100%;
+    height:40px ;
+    overflow: hidden;
+    margin-bottom: 1px;
+}
+
+.chnl-name{
+    font-size: 14px;
+    margin:  0;
+    color: #979797;
+}
