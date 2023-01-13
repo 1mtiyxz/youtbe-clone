@@ -10,155 +10,200 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
- <div class="container-fluid">      
-   <div class="row">
 
-    <div class="col" style="padding: 0px;">
-        <nav class="navbar fix-nav navbar-expand-lg bg-body-tertiary bg-dark nav-thing  " 
-        style="color: white;" >
+    
+ <div class="container-fluid"> 
+  <!-- NAVBAR  -->
+  <div class="row" id="mainnav">
 
-            <!-- SIDE NAV BAR STARTS HERE -->
-            <div id="firstnavbar" class=" nav-thing"> 
-                <a href="#" class="menu-bars" id="show-menu">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-        
-            <nav id="nav-menu">
-                <ul class="nav-menu-items">
-                    <div id="navbar-toggle">
-                        <a href="" class="menu-bars" id="hide-menu">
-                            <i class="fas fa-bars nav-icon"></i>
-                        </a>
-                        <br>
-                        <a style="text-decoration: none; padding-top: 1px;" href="#"><h4><i class="fab fa-youtube" id="youtube-logo"></i> Youtube</h4></a>
-                    </div>
-                    <hr/>
-        
-                    <div class="nav-section">
-                        <li class="nav-text">
-                            <a href="#"><i class="fa-solid fa-house nav-icon"></i> Home</a>
-                        </li>
-                        <li class="nav-text">
-                            <a href="#"><i class="fas fa-fire nav-icon"></i>  Shorts</a>
-                        </li>
-                        <li class="nav-text">
-                            <a href="#"><i class="fab fa-youtube nav-icon"></i> Subscriptions</a>
-                        </li>
-                    </div>
-                    <hr/>
-                    <div class="nav-section">
-                        <!-- <li class="nav-text">
-                            <a href="#"><i class="fa-regular fa-bookmark"></i>     Library</a>
-                        </li> -->
-                        <li class="nav-text">
-                            <a href="#"><i class="fas fa-history nav-icon"></i>  History</a>
-                        </li>
-                        <li class="nav-text">
-                            <a href="#"><i class="fab fa-youtube nav-icon"></i> Your Videos</a>
-                        </li>
-                        <li class="nav-text">
-                            <a href="#"><i class="fa fa-clock nav-icon"></i> Watch Later</a>
-                        </li>
-                        <li class="nav-text">
-                            <a href="#"><i class="fas fa-fire nav-icon"></i>  Library</a>
-                        </li>
-                        <li class="nav-text">
-                            <a href="#"><i class="fa-regular fa-heart"></i> Liked Videos</a>
-                        </li>
-                    </div>
-        
-                    
-                </ul>
-            </nav>
-        <!-- SIDE NAV BAR ENDS HERE -->
+    <!-- NAVBAR 3 LAYER -->
+    <div class="col-12" style="padding: 0px;">
+      <nav class="navbar fix-nav navbar-expand-lg bg-body-tertiary  nav-thing  " 
+      style="background-color: #fff;" >
+
+      <div  id="firstnavbar" class=" nav-thing"> 
+        <a href="#" class="menu-bars" id="show-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <!--  -->
 
 
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="yt logo.webp" width="120px" alt="yt_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Search..." aria-label="Search" id="searchbox">
+                <button id="searchbtn" class="btn btn-outline-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
 
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="yt logo.webp" width="120px" alt="yt_logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2 " type="search" placeholder="Search..." aria-label="Search" id="searchbox">
-                  <button id="searchbtn" class="btn btn-outline-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg></button>
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a id="mic" class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
-                            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-                            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-                          </svg></a>
-                        </li>
-                      </ul>
-                </form>
-
-
-                
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a id="video" class=" account-detail nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg " width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
-                      </svg></a>
-                    </li>
-                </ul>
-
-                <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a id="notification" class=" account-detail nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg " width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a id="mic" class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                          <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                          <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
                         </svg></a>
                       </li>
-                </ul>
+                    </ul>
+              </form>
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item">
-                        <a id="profile" class=" account-detail nav-link" href="#"><img src="profile.png" width="50px " alt=""></i></a>
-                      </li>
-                  </ul>  
-                   
-                    
-    
-              </div>
-            </div>
-          </nav>
-     </div>
-    
-   </div>
+              
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a id="video" class=" account-detail nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg " width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                    </svg></a>
+                  </li>
+              </ul>
+
+              <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a id="notification" class=" account-detail nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg " width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                      </svg></a>
+                    </li>
+              </ul>
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                      <a id="profile" class=" account-detail nav-link" href="#"><img src="profile.png" width="50px " alt=""></i></a>
+                    </li>
+              </ul>  
+                 
+                  
   
-  <!-- filters  -->
-  <div class="filter">
-    <button class="filter-options active">All</button>
-    <button class="filter-options ">css</button>
-    <button class="filter-options ">Javascript</button>
-    <button class="filter-options ">web-dev</button>
-    <button class="filter-options ">artificial intelligence</button>
-    <button class="filter-options ">machine learning</button>
-    <button class="filter-options ">entertainment</button>
-    <button class="filter-options ">python</button>
-    <button class="filter-options ">DSA</button>
+            </div>
+          </div>
+        </nav>
+   </div>
   </div>
+  <div class="row">
+    <div class="col">
+  
+      <div class="filter cutfeature " id="cutfeature" >
+      <button class="filter-options active">All</button>
+      <button class="filter-options ">artificial intelligence</button>
+      <button class="filter-options ">css</button>
+      <button class="filter-options ">css</button>
+      <button class="filter-options ">css</button>
+      <button class="filter-options ">Javascript</button>
+      <button class="filter-options ">web-dev</button>
+      <button class="filter-options ">artificial intelligence</button>
+      <button class="filter-options ">artificial intelligence</button>
+      <button class="filter-options ">artificial intelligence</button>
+      <button class="filter-options ">artificial intelligence</button>
+      <button class="filter-options ">artificial intelligence</button>
+      <button class="filter-options ">machine learning</button>
+      <button class="filter-options ">machine learning</button>
+      <button class="filter-options ">machine learning</button>
+      <button class="filter-options ">entertainment</button>
+      <button class="filter-options ">python</button>
+      <button class="filter-options ">DSA</button>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar end -->
 
-  <!-- video container -->
-  <!-- <div class="video-container">
+
+
+  <div class="row">
+    <div class="col">
+    <!-- col for sidebar start -->
+      
+      
+      
+
+      <nav id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <a href="" class="menu-bars" id="hide-menu">
+                    <i class="fas fa-bars nav-icon"></i>
+                </a>
+                <br>
+                <a style="text-decoration: none; padding-top: 1px;" href="#"><h4><i class="fab fa-youtube" id="youtube-logo"></i> Youtube</h4></a>
+            </div>
+            <hr/>
+
+            <div class="nav-section">
+                <li class="nav-text">
+                    <a href="#"><i class="fa-solid fa-house nav-icon"></i> Home</a>
+                </li>
+                <li class="nav-text">
+                    <a href="#"><i class="fas fa-fire nav-icon"></i>  Shorts</a>
+                </li>
+                <li class="nav-text">
+                    <a href="#"><i class="fab fa-youtube nav-icon"></i> Subscriptions</a>
+                </li>
+            </div>
+            <hr/>
+            <div class="nav-section">
+                <!-- <li class="nav-text">
+                    <a href="#"><i class="fa-regular fa-bookmark"></i>     Library</a>
+                </li> -->
+                <li class="nav-text">
+                    <a href="#"><i class="fas fa-history nav-icon"></i>  History</a>
+                </li>
+                <li class="nav-text">
+                    <a href="#"><i class="fab fa-youtube nav-icon"></i> Your Videos</a>
+                </li>
+                <li class="nav-text">
+                    <a href="#"><i class="fa fa-clock nav-icon"></i> Watch Later</a>
+                </li>
+                <li class="nav-text">
+                    <a href="#"><i class="fas fa-fire nav-icon"></i>  Library</a>
+                </li>
+                <li class="nav-text">
+                    <a href="#"><i class="fa-regular fa-heart"></i> Liked Videos</a>
+                </li>
+            </div>
+
+            
+        </ul>
+    </nav>
+
+  </div>
+  <!--  sidebar ends here -->
+
+  
+    <!-- filters  -->
+
+
+
+
+</div>
+
+
+   
+  
+  
+  <div class="row">
+    <div class="col" id="viewvideo">
+          <!-- video container -->
+  <div class="video-container " id="cutvideo">
     <div class="video">
-      <img class="thumbnail" src="https://i.ytimg.com/vi/ZPXoyXYIU04/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAs4FigIMCAAQARh_IFEoGDAP&rs=AOn4CLCBCCH-w13bkbH9fnzRhO1-Z8zI_w" alt="img">
+      <!-- <img class="thumbnail" src="https://i.ytimg.com/vi/ZPXoyXYIU04/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAs4FigIMCAAQARh_IFEoGDAP&rs=AOn4CLCBCCH-w13bkbH9fnzRhO1-Z8zI_w" alt="img">
       <div class="content">
         <img src="profile.png" class="channel-icon" alt="">
         <div class="info"><h6 class="title">Youtube clone 2023 | Fully working</h6>
           <p class="chnl-name">Clone youtube</p>
         </div>
-      </div>
+      </div> -->
 
     </div>
-  </div> -->
+  </div>
+    </div>
+  </div>
+</div>
+
+  
 
   
     
